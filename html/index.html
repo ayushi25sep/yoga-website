@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <title>signin</title>
+
+    <!--external style sheet-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!--fontawesomecdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header style="box-shadow:3px 3px 5px 6px #ccc;background:linear-gradient(to top, #f71543, #eb833e) fixed;font-size:55px;color:white;font-family:'papyrus';font-weight:bold;"><img src="/images/f.jpg" style="width:6%;border-radius:50%;margin-top:3px;position:relative; top:15px;"><span style="color:green;">Friends</span><span style="color:blue";>V</span><span style="color:white;">illa</span></header>
+   <img src="/images/s1.png" style=" box-shadow: 3px 3px 5px 6px #ccc;width:30%;height:65vh;float:left;margin-top:60px;opacity:0.5;border-radius:50%;margin-left:10%;">
+    <div class="container">
+        <h1>Log<span>in</span> here</h1>
+        <div class="inputbox">
+            <i class="fa fa-envelope-o"></i>
+            <input type="email" placeholder="Email Id" required>
+        </div>
+        <div class="inputbox">
+            <i class="fa fa-key"></i>
+            <input type="password" placeholder="Password" id="pass" required>
+            <span class="eye" onclick="myfun()">
+                <i id="hide1" class="fa fa-eye-slash"></i>
+                <i id="hide2" class="fa fa-eye"></i>
+            </span>
+        </div>
+        <button type="button" class="btn"><a href="/html/main.html" style="color:white;">LOGIN</a></button>
+        <div style="display:flex; justify-content: space-evenly;">
+            <button type="button" class="extra"><a href="/html/password.html" style="color:white;">Forgot password?</a></button>
+            <button type="button" class="extra"><a href="/html/signup.html" style="color:white;">SignUp</a></button>
+        </div>
+    </div>
+   <a href="https://play.google.com/store/search?q=facebook&hl=en_IN"> <img src="/images/1.png" style="width:10%;height:9vh;margin-left:62%;position:relative;top:-88px;"></a>
+  <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=en_IN"> <img src="/images/2.png" style="width:10%;height:9.5vh;margin-left:79%;position:relative; top:-156px;"></a>
+
+    <script>
+        function myfun()
+        {
+            var x= document.getElementById("pass");
+            var y= document.getElementById("hide1");
+            var z= document.getElementById("hide2");
+            if(x.type==="password")
+            {
+                x.type="text";
+                y.style.display="block";
+                z.style.display="none";
+            }
+
+            else
+            {
+                x.type="password";
+                y.style.display="none";
+                z.style.display="block";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

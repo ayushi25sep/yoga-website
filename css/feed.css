@@ -1,0 +1,166 @@
+ 
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 0;
+   
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    color: #B33;
+  }
+  
+  a:hover .name {
+    text-decoration: underline;
+  }
+  
+  p {
+    margin-top: 0;
+  }
+  
+  .card {
+    border: 1px solid lightgray;
+    margin-top:1%;
+    border-radius: 4px;
+    padding: 12px;
+  }
+  
+  .card.summary {
+    padding: 0;
+  }
+  
+  .card.summary > .background {
+    display: block;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .card.summary > .information {
+    color: #333;
+    border-top: 4px solid black;
+    padding: 8px 12px;
+  }
+  
+  .card.summary > .information > .title {
+    font-weight: bold;
+   
+  }
+  
+  .card.summary > .information > div:not(:last-child) {
+    margin-bottom: 4px;
+  }
+  
+  .card.summary .domain {
+    color: #888;
+  }
+  
+  .tweets-container {
+    margin: auto;
+    max-width: 700px;
+    background:url(/images/s4.jpg);
+  }
+  
+  .tweets-header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: -1px;
+  }
+  
+  .tweets-container > .tweet:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  
+  .tweet {
+    position: relative;
+    border-radius: 0;
+    padding-left: 72px;
+    margin-bottom: -1px;
+    
+  }
+  
+  .tweet > .author > .avatar {
+    position: absolute;
+    border-radius: 4px;
+    top: 12px;
+    left: 12px;
+    width: 48px;
+    height: 48px;
+    border-top: 4px solid black;
+  }
+  
+  .tweet > .author > .name {
+    font-weight: bolder;
+    font-size:18px;
+    font-family:'sans-serif';
+  }
+  
+  .tweet > .author > .username {
+    color: #888;
+    font-family:'papyrus';
+  }
+  
+  .tweet > .actions > .fa {
+    
+    cursor: pointer; 
+    margin-top: 12px;
+    margin-right: 36px;
+   
+  }
+  
+/*loading*/
+ 
+  .section{
+      height:100px;
+      line-height:100px;
+      text-align:center;
+      
+  }
+  .leader{
+    width:75px;
+    height:75px;
+    display:inline-block;
+    vertical-align:middle;
+    position:relative;
+  }
+  .spin1{
+    border:3px solid rgba(255,255,255,0.5);
+    border-radius:50%;
+  }
+  .spin1:after{
+    content:"";
+    top:-6px;left:-6px;
+    right:-6px;bottom:-6px;
+    position:absolute;
+    border:6px solid transparent;
+    border-top-color:orangered;
+    border-radius:50%;
+    animation:spin 3s linear infinite;
+  }
+  @keyframes spin{
+    0%{
+      transform:rotate(0deg);
+    }
+    50%{
+      transform:rotate(360deg);
+    }
+    100%{
+      transform:rotate(720deg);
+    }
+  }
+ 
